@@ -1,34 +1,92 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js Todo App
+
+A simple, lightweight Todo application built with Next.js and Tailwind CSS.
+
+## Features
+
+- Create, toggle, and delete tasks
+- Clean, responsive UI using Tailwind CSS
+- Built on Next.js App Router architecture
+- Keyboard support (Enter to add tasks)
+- Visual progress tracking
+
+## Screenshots
+
+![Todo App Screenshot](public/todo-screenshot.png)
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+- Node.js 18.17.0 or later
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/abiv23/todo.git
+   cd todo
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. Run the development server:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Project Structure
+
+```
+/todo
+  ├── src/
+  │   ├── app/
+  │   │   ├── globals.css      # Global styles with Tailwind directives
+  │   │   ├── layout.js        # Root layout with global CSS imports
+  │   │   └── page.js          # Homepage that renders the TodoApp component
+  │   └── components/
+  │       └── TodoApp.jsx      # Main Todo application component
+  ├── public/                  # Static files
+  ├── tailwind.config.js       # Tailwind CSS configuration
+  ├── postcss.config.js        # PostCSS configuration for Tailwind
+  └── package.json             # Project dependencies and scripts
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech Stack
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- [Next.js](https://nextjs.org/) - React framework with App Router
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
+- [React](https://reactjs.org/) - UI component library
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Future Enhancements
 
-## Learn More
+Potential improvements to consider:
 
-To learn more about Next.js, take a look at the following resources:
+- Task persistence (LocalStorage or database)
+- Task categories/tags
+- Due dates and reminders
+- Task reordering via drag and drop
+- Dark/light mode toggle
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+This project is open source and available under the [MIT License](LICENSE).
 
-## Deploy on Vercel
+## Acknowledgments
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Built with stable versions of Next.js and Tailwind CSS
+- Designed for simplicity and ease of use
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+---
+
+Feel free to contribute, report issues, or suggest improvements!
